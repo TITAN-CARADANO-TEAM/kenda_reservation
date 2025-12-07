@@ -6,6 +6,7 @@ import { MapPin, Navigation, Clock, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface RideRequestSheetProps {
     isOpen?: boolean;
@@ -148,7 +149,13 @@ export const RideRequestSheet = ({
                     className="w-full h-14 text-lg font-bold bg-[#F0B90B] text-black hover:bg-[#F0B90B]/90 rounded-xl disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                     Commander un Taxi
-                </Button>
+                </Button><br /><br />
+                
+                <Link href='/reservation'>
+                    <Button className="w-full h-14 mb-2 text-lg font-bold bg-[#F0B90B] text-black hover:bg-[#F0B90B]/90 rounded-xl disabled:opacity-50 disabled:cursor-not-allowed">
+                        Reserver un taxi
+                    </Button>
+                </Link>
             </motion.div>
         </div>
     );

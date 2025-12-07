@@ -28,7 +28,7 @@ export default function ConfirmationPage() {
     const history = JSON.parse(localStorage.getItem('reservations') || '[]');
     history.push(booking);
     localStorage.setItem('reservations', JSON.stringify(history));
-    router.push('/reservation/historique');
+    router.push('/rides');
   };
 
   const handleEdit = () => {
@@ -67,10 +67,10 @@ export default function ConfirmationPage() {
     </ul>
 
     <div className="mt-4 flex flex-col gap-2">
-      <button className="btn btn-outline-warning fw-bold w-full py-2" onClick={handleEdit}>✏️ Modifier</button>
-      <button className="btn btn-outline-warning fw-bold w-full py-2" onClick={handlePayNow}>💳 Payer maintenant ({booking.price.toFixed(2)} $)</button>
-      <button className="btn btn-outline-warning fw-bold w-full py-2" onClick={handlePayLater}>⏰ Payer après la course</button>
-      <button className="btn btn-outline-danger fw-bold w-full py-2" onClick={handleCancel}>❌ Annuler</button>
+      <button className="btn btn-outline-warning fw-bold w-full py-2" onClick={handleEdit}>Modifier</button>
+      <button className="btn btn-outline-warning fw-bold w-full py-2" onClick={handlePayNow}>Payer maintenant ({booking.price.toFixed(2)} $)</button>
+      <button className="btn btn-outline-warning fw-bold w-full py-2" onClick={handlePayLater}>Payer après la course</button>
+      <button className="btn btn-outline-danger fw-bold w-full py-2" onClick={handleCancel}>Annuler</button>
     </div>
   </div>
 </main>

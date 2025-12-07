@@ -15,31 +15,31 @@ export function DesktopSidebar() {
     }
 
     const navItems = [
-        // {
-        //     label: "Accueil",
-        //     href: "/map",
-        //     icon: Home,
-        // },
-        // {
-        //     label: "Activités",
-        //     href: "/rides",
-        //     icon: Clock,
-        // },
-        // {
-        //     label: "Portefeuille",
-        //     href: "/wallet",
-        //     icon: Wallet,
-        // },
-        // {
-        //     label: "Compte",
-        //     href: "/account",
-        //     icon: User,
-        // },
         {
-            label: "Reservation",
-            href: "/reservation",
-            icon: CarIcon,
+            label: "Accueil",
+            href: "/map",
+            icon: Home,
         },
+        {
+            label: "Activités",
+            href: "/rides",
+            icon: Clock,
+        },
+        {
+            label: "Portefeuille",
+            href: "/wallet",
+            icon: Wallet,
+        },
+        {
+            label: "Compte",
+            href: "/account",
+            icon: User,
+        },
+        // {
+        //     label: "Reservation",
+        //     href: "/reservation",
+        //     icon: CarIcon,
+        // },
     ];
 
     return (
